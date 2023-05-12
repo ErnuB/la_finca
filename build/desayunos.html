@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Finca Menú</title>
+    <script src="https://kit.fontawesome.com/579ca2ab87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="bg-gray-950 text-white h-full bg-cover" style="background-image:url(./img/meteor2.svg);">
+    <header class="sticky top-0 bg-black text-white z-10 sm:inline-flex items-center w-full">
+        <div class="flex justify-between items-center">
+            <h1 class="text-4xl flex-none text-golden px-6 py-2 inline"><a href="#"><span class="font-sistina"><span class="text-5xl">l</span>a <span class="text-5xl">f</span>inca</span></a></h1>
+            <button id="menu-btn" class="material-symbols-outlined text-3xl md:hidden px-8 text-golden">
+                restaurant_menu
+            </button>            
+        </div>    
+        <nav class="max-w-5xl py-2 md:grid sm:grid-cols-4  lg:grid-cols-7 items-center gap-3 hidden " aria-label="menu">
+            <a class="px-2 mx-2" href="#entradas">Entradas</a>
+            <a class="px-2 mx-2" href="#platillos">Platillos</a>
+            <a class="px-2 mx-2" href="#especialidades">Especialidades</a>
+            <a class="px-2 mx-2" href="#parrilladas">Parrilladas</a>
+            <a class="px-2 mx-2" href="#mariscos">Mariscos</a>
+            <a class="px-2 mx-2" href="#infantil">Menú Infantil</a>
+            <a class="px-2 mx-2" href="#postres">Postres</a>
+            <a class="px-2 mx-2" href="#extras">Órdenes Extras</a>
+            <a class="px-2 mx-2" href="#bebidas">Bebidas</a>
+            <a class="px-2 mx-2" href="#cervezas">Cervezas</a>
+            <a class="px-2 mx-2" href="#digestivos">Digestivos</a>
+            <a class="px-2 mx-2" href="#preparadas">Preparadas</a>
+            <a class="px-2 mx-2" href="#vinos">Vinos y Licores</a>
+            <a class="px-2 mx-2" href="#mixologia">Mixología</a>
+            <a class="px-2 mx-2 text-golden" href="./index.html">Menú Principal</a>
+        </nav>
+        <section id="mobile-menu" class="absolute top-0 bg-black bg-opacity-90 w-full text-3xl hidden flex-col justify-center origin-right animate-open-menu">
+            <button class="text-5xl self-end px-6">&times;</button>
+            <nav class="flex flex-col min-h-screen items-center" aria-label="mobile">
+                <a class="text-lg p-1 mx-2 text-golden" href="#entradas">Entradas</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#platillos">Platillos</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#especialidades">Especialidades</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#parrilladas">Parrilladas</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#mariscos">Mariscos</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#infantil">Menú Infantil</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#postres">Postres</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#extras">Órdenes Extras</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#bebidas">Bebidas</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#cervezas">Cervezas</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#digestivos">Digestivos</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#preparadas">Preparadas</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#vinos">Vinos y Licores</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="#mixologia">Mixología</a>
+                <a class="text-lg p-1 mx-2 text-golden" href="./index.html">Menú Principal</a>
+            </nav>
+        </section>
+    </header>
+    <div class="carousel w-full h-60 relative overflow-hidden my-2">
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf1.jpg" alt=""></div>
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf2.jpg" alt=""></div>
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf3.jpg" alt=""></div>
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf4.jpg" alt=""></div>
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf5.jpg" alt=""></div>
+        <div class="slide absolute top-0 left-0 w-full h-full object-cover transition-opacity ease-in-out duration-1000 flex items-center justify-center"><img src="./img/carousel-bf/bf6.jpg" alt=""></div>
+    </div>
+    <section id="entradas">
+        <div class="text-center">
+            <h2 class="border-4 px-5 border-golden font-sistina uppercase m-2 text-golden text-3xl inline-block">entradas y botanas</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pulpo a la Parrilla</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs. de pulpo a la parrilla.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Botana <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$400</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">250 grs. de arrachera, chistorra y tripa.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Botana Mixta</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-40">Chicharrón de Rib-eye, tripa acompañado con guacamole y totops</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tuétanos</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">3 piezas de tuétano.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tripitas Asadas</h3><span class="inline text-2xl float-right">$280</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. de tripitas en molcajete con base de guacamole acompañadas de queso panela y totops.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Chicharrón Rib Eye</h3><span class="inline text-2xl float-right">$350</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-56">300 grs. de chicharrón rib-eye en molcajete con base de guacamole acompañadas de queso panela y totops.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Chicharrón de Atún</h3><span class="inline text-2xl float-right">$280</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-56">300 grs. de chicharrón de atún en molcajete con base de guacamole acompañadas de queso panela y totopos.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Queso Fundido</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">Queso fundido con ingrediente a elegir (chorizo, rajas, champiñones o chistorra).</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Panela Asada</h3><span class="inline text-2xl float-right">$180</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-40">Panela asada acompañada con nopales asados y chimichurri.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tostada de Aguachile</h3><span class="inline text-2xl float-right">$85</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Taco <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$91</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Sashimi de Atún</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">Láminas de atún marinadas con salsa de la casa acompañadas con cebollas caramelizadas y aguacate.</p></li>
+            <li class="mx-2 px-2"><h3 class="inline text-2xl ">Ensalada <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$190</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-52">Espinacas, lechugas mixtas, manzana verde, fresas, nuez, papas y aderezo de la casa.</p></li>
+            <li class="mx-4 pr-2 content-center"><h3 class="inline text-lg pr-44 bg-golden text-black font-bold text-right">Extra de pollo</h3><span class="inline text-2xl float-right">$50</span></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Alitas Búfalo</h3><span class="inline text-2xl float-right">$180</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">12 piezas de alitas búfalo</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Costillas de Aguachile</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;____&emsp;</p><p class="text-xs text-golden w-60">Molcajete con constillas de res a la parrilla, marinadas con salsa de limón, chiltepin y cebolla morada.</p></li>
+        </ul>
+        <img src="./img/pulpo-parrilla.png" alt="Pulpo a la Parrilla">
+    </section>
+    <section id="platillos" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-5 border-golden font-sistina uppercase m-2 text-golden text-3xl inline-block">platillos</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">New York</h3><span class="inline text-2xl float-right">$420</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Medallones de Res</h3><span class="inline text-2xl float-right">$420</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Filete Ladrillo</h3><span class="inline text-2xl float-right">$440</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Filete Migñon</h3><span class="inline text-2xl float-right">$440</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-40">300 grs. Medallón de filete de res envuelto en tocino bañado en salsa gravy.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Arrachera</h3><span class="inline text-2xl float-right">$380</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Molcajete <br> Cielo, Mar y Tierra</h3><span class="inline text-2xl float-right">$450</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs. Arrachera, camarón y pollo.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Molcajete <br> de Arrachera</h3><span class="inline text-2xl float-right">$380</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Top Sirloin</h3><span class="inline text-2xl float-right">$280</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Rib Eye</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Rib Eye Añejo</h3><span class="inline text-2xl float-right">$980</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">600 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Rib Eye Añejo</h3><span class="inline text-2xl float-right">$550</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Salmón a la Parrilla</h3><span class="inline text-2xl float-right">$350</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Medallón de Atún <br> a la Parrilla</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Fajitas de Res</h3><span class="inline text-2xl float-right">$350</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Fajitas de Pollo</h3><span class="inline text-2xl float-right">$240</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pechuga Asada</h3><span class="inline text-2xl float-right">$240</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Brocheta de Pollo</h3><span class="inline text-2xl float-right">$220</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Brocheta de Res</h3><span class="inline text-2xl float-right">$350</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">300 grs.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Costilla de Cabrería</h3><span class="inline text-2xl float-right">$450</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-golden w-52">Guacamole, salsa mexicana, hueso de tuétano.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Fetuccini Alfredo</h3><span class="inline text-2xl float-right">$280</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">200 grs. de spaghetti <br> 200 grs. de proteína (pollo, camarón, arrachera o filete de res).</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Hamburguesa <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$210</span><p class="text-golden inline float-right">&emsp;_&emsp;</p><p class="text-xs text-golden w-60">Pan artesanal, 200 grs. de carne de filete de res, queso mozarella, queso chedar, lechuga sangría, cebolla caramelizada y papas gajos.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tacos <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$240</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">Órden de 3 tacos (Arrachera, pulpo, camarón y queso).</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Camarones <br> Costa Azul</h3><span class="inline text-2xl float-right">$220</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">Camaronnes rellenos de queso envueltos en tocino, bañados con salsa de quesos.</p></li>
+        </ul>
+        <img src="./img/molcajete.png" alt="Molcajete">
+    </section>
+    <section id="especialidades" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-5 border-golden font-sistina uppercase m-2 text-golden text-3xl inline-block">Especialidades</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Culichi</h3><span class="inline text-2xl float-right">$420</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. Medallones de res, chistorra y papa al horno.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla del Patrón</h3><span class="inline text-2xl float-right">$420</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">300 grs. Filete de res, tripitas asadas y panela asada.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Norteña</h3><span class="inline text-2xl float-right">$350</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. Costilla de cabrería, queso fundido y papa rellena.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Texana</h3><span class="inline text-2xl float-right">$280</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-40">300 grs. Costillas BBQ, papas sozonadas y elote amarillo.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Suprema</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. Ryb eye, queso fundido y papa al horno.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Potrero</h3><span class="inline text-2xl float-right">$410</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-40">300 grs. Arrachera, panela fresca y guacamole.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Argentina</h3><span class="inline text-2xl float-right">$320</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. Churrasco vegetales a la parrilla y chistorra.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tabla Especial</h3><span class="inline text-2xl float-right">$390</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. Arrachera aros de cebolla y elote amarillo.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Valle Guadalupe</h3><span class="inline text-2xl float-right">$420</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">300 grs. Medallones de res con verduras salteadas y gravy de res.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Rib Eye Portobello</h3><span class="inline text-2xl float-right">$500</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">300 grs. Portobello gratinado con chistorra en una cama de espárragos.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Arrachera Suprema</h3><span class="inline text-2xl float-right">$450</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-52">300 grs. Arrachera con chistorra, champiñones, queso gratinado y papa cambray.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tomahawk</h3><span class="inline text-2xl float-right">$1,100</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">Verduras a la parrilla.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">T-bone</h3><span class="inline text-2xl float-right">$450</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">300 grs. T-bone acompañado con papa gratinada y espinaca deshidratada.</p></li>
+        </ul>
+        <img src="./img/arrachera-suprema.png" alt="Arrachera Suprema">
+    </section>
+    <section id="parrilladas " class="mt-8">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">parrilladas</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$1600</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-golden w-52">(4 personas)Filete de res, pechuga de pollo, top sirloin, arrachera aguja norteña y chistorra.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado, caldito de tuétano, frijoles charros y papas al horno.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada Especial</h3><span class="inline text-2xl float-right">$1900</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-golden w-52">(4 personas) T-bone, arrachera, pulpo a la parrilla, medallones de res chicharrón rib eye, tripitas, chistorra con panela asada guacamole y frijoles.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado, caldito de tuétano, frijoles charros y papas al horno.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada Culichi</h3><span class="inline text-2xl float-right">$1600</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-52">(4 personas) New York, costilla cabrería, top sirloin, fajitas mixtas, chorizo argentino, guacamole, pico de gallo, salsa pimienta.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado, caldito de tuétano, frijoles charros y papas al horno.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada El Rambo</h3><span class="inline text-2xl float-right">$950</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-golden w-52">Hueso de tuétano, filete de res, picaña, arrachera, salmón, espárragos, chiles toreados, vegetales a la parrilla, 2 frijoles charros, 2 papas al horno, tortillas y salsas.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado y caldito de tuétano.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada El Compita</h3><span class="inline text-2xl float-right">$950</span><p class="text-golden inline float-right">&emsp;______&emsp;</p><p class="text-xs text-golden w-52">Filete de cabrería, arrachera, pechuga de pollo, medallón de camarón, chistorra, panela asada, vegetales a la parrilla, cebollitas, 2 frijoles charros, 2 papas al horno, tortillas y salsas.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado y caldito de tuétano.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Parrillada Para dos</h3><span class="inline text-2xl float-right">$950</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-52">Medallones, vegetales, chiles asados, portobellos de res, toritos, 2 frijoles charros, 2 papas al horno, tortillas y salsas.</p><p class="text-justify  rounded-3xl bg-white text-black text-xs pl-16 py-1 mt-2 w-64 leading-3 -indent-12 pr-2 font-bold">Incluye: Tacos de chicharrón prensado y caldito de tuétano.</p></li>
+        </ul>
+        <img src="./img/parrillada-especial.png" alt="Parrillada Especial">
+    </section>
+    <section id="mariscos" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">mariscos</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Aguachile <br>Tatemado</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">Camarones cocidos con jugo de limón, marinados con una salsa de chiles a la parrilla.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Aguachile <br>Salsa Negra</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">Camarones cocidos con jugo de limón, marinados con salsas negras recetas de la casa.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Aguachile <br>Mango Habanero</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">Camarones cocidos con jugo de limón, marinados con salsa de mango y habanero tatemado.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Aguachile Verde</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">Camarones cocidos con jugo de limón, marinados con salsa a base de chile serrano y cilantro.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Aguachile Rojo</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-48">Camarones cocidos con jugo de limón, marinados con salsa de chiltepín con clamato.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Mariscada <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$1400</span><p class="text-golden inline float-right">&emsp;______&emsp;</p><p class="text-xs text-golden w-48">(Para 4 personas) Camarón, pulpo, pescado, atún y aguacate.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Mariscada <span class="font-sistina"><span class="text-3xl">l</span>a <span class="text-3xl">f</span>inca</span></h3><span class="inline text-2xl float-right">$800</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-golden w-48">(Para 2 personas) Camarón, pulpo, pescado, atún y aguacate.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Ceviche de Camarón</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Ceviche Mixto</h3><span class="inline text-2xl float-right">$270</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Cóctel de Camarón</h3><span class="inline text-2xl float-right">$270</span><p class="text-golden inline float-right">&emsp;________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Cóctel Mixto</h3><span class="inline text-2xl float-right">$270</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Cóctel de Pulpo</h3><span class="inline text-2xl float-right">$270</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden">Camarón y pulpo.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tártara de Atún</h3><span class="inline text-2xl float-right">$200</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-golden w-44">Atún con cebolla morada, aguacate, cilantro y salsas negras y ajonjolí arriba.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Ceviche de Atún</h3><span class="inline text-2xl float-right">$200</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+        </ul>
+        <img src="./img/aguachile-mango.png" alt="Aguachile Mango">
+    </section>
+    <section id="infantil" class="mt-16 mx-2 p-2 border-dashed border-4 border-golden rounded-lg">
+        <div class="text-center">
+            <h2 class="border-2 px-1 border-white font-sistina uppercase text-center m-2 text-white text-3xl inline-block">menú infantil</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl">Hamburguesa Kids</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;___&emsp;</p><p class="text-xs text-golden w-48">Acompañada con papas fritas.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl">Nuggets de Pollo<span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;__&emsp;</p><p class="text-xs text-golden w-48">Acompañados con papas fritas.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl">Dedos de Queso</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;_____&emsp;</p><p class="text-xs text-golden w-48">Acompañados con papas fritas.</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl">Quesadilla</h3><span class="inline text-2xl float-right">$60</span><p class="text-golden inline float-right">&emsp;_____&emsp;</p><p class="text-xs text-golden w-48">Una pieza acompañada de frijol.</p></li>
+        </ul>
+    </section>
+    <section id="postres" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">postres</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Plátano con Nieve</h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Copa de Nieve</h3><span class="inline text-2xl float-right">$80</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pastel de Queso <br>con Frambuesa</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pastel de Chocolate</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Flan</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+        </ul>
+        <img src="./img/choco-flan.png" alt="Flan">
+    </section>
+    <section id="extras" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">Órdenes Extras</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Guacamole</h3><span class="inline text-2xl float-right">$160</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Frijoles Charros</h3><span class="inline text-2xl float-right">$30</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Taco de Chicharrón</h3><span class="inline text-2xl float-right">$30</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Vegetales</h3><span class="inline text-2xl float-right">$50</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Caldito de Tuétano</h3><span class="inline text-2xl float-right">$30</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Papa al Horno</h3><span class="inline text-2xl float-right">$40</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Chistorra</h3><span class="inline text-2xl float-right">$100</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tripa</h3><span class="inline text-2xl float-right">$150</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Espárragos</h3><span class="inline text-2xl float-right">$100</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Arps de Cebolla</h3><span class="inline text-2xl float-right">$80</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Papas Fritas</h3><span class="inline text-2xl float-right">$70</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Qusadilla de <br>Harina o Maíz</h3><span class="inline text-2xl float-right">$60</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p></li>
+        </ul>
+    </section>
+    <section id="bebidas" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">bebidas</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Limonada Natural</h3><span class="inline text-2xl float-right">$45</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">500 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Limonada Mineral</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">500 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Fresa Limón</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">500 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Naranjada</h3><span class="inline text-2xl float-right">$45</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">500 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Jarra</h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">1500 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Agua Natural</h3><span class="inline text-2xl float-right">$35</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">330 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Agua de Sabor</h3><span class="inline text-2xl float-right">$50</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Resfrescos</h3><span class="inline text-2xl float-right">$40</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Café</h3><span class="inline text-2xl float-right">$45</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">250 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Agua Mineral <span class="text-sm">S. Pellegrino</span></h3><span class="inline text-2xl float-right">$70</span><p class="text-golden inline float-right">&emsp;_____&emsp;</p><p class="text-xs text-white">250 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Agua Mineral <span class="text-sm">S. Perrier</span></h3><span class="inline text-2xl float-right">$70</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-white">330 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Agua Mineral <span class="text-sm">S. Topo Chico</span></h3><span class="inline text-2xl float-right">$50</span><p class="text-golden inline float-right">&emsp;____&emsp;</p><p class="text-xs text-white">600 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Schweppes <span class="text-sm">Agua Tónica</span></h3><span class="inline text-2xl float-right">$70</span><p class="text-golden inline float-right">&emsp;________&emsp;</p><p class="text-xs text-white">600 ml</p></li>
+        </ul>
+        <img src="./img/bebidas.png" alt="Bebidas">
+    </section>
+    <section id="cervezas" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">Cervezas</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Modelo Especial</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Negro Modelo</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tecate Light</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Ultra Michelob</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Stella Artois</h3><span class="inline text-2xl float-right">$60</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pacífico</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Pacífico Suave</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">XX Lager</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">XX Ambar</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Heineken</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Victória</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Corona</h3><span class="inline text-2xl float-right">$55</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+        </ul>
+    </section>
+    <section id="digestivos" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">Digestivos</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Khalua</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Amareto</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Baileys</h3><span class="inline text-2xl float-right">$145</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Licor 43</h3><span class="inline text-2xl float-right">$95</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Anis Dulce</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Carajillo</h3><span class="inline text-2xl float-right">$145</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+        </ul>
+    </section>
+    <section id="preparadas" class="mt-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">preparadas</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Clamato Culichi</h3><span class="inline text-2xl float-right">$160</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">600 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Limonada Eléctrica</h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Clamato Preparado</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_________&emsp;</p><p class="text-xs text-white">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Sangría Preparada</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">360 ml</p></li>
+        </ul>
+    </section>
+    <section id="vinos" class="mt-16 mb-4">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">vinos y licores</h2>
+        </div>
+        <div class="mt-10 mx-2 border-x-2 rounded-lg border-golden relative">
+            <h2 class="right-1/2 font-sistina text-3xl text-golden -mt-4 absolute top-0">Vinos</h2>
+            <ul class="w-full">
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Finca Las Moras <br> Cabernet</h3><span class="inline text-2xl float-right">$600</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Finca San Martín <br> Torre De Oña</h3><span class="inline text-2xl float-right">$900</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">L.A. Cetto Nebbiolo</h3><span class="inline text-2xl float-right">$900</span><p class="text-golden inline float-right">&emsp;____&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Sangre de Toro <br> Reserva 2016</h3><span class="inline text-2xl float-right">$700</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Casillero del Diablo <br> Carbernet Sauvignon</h3><span class="inline text-2xl float-right">$700</span><p class="text-golden inline float-right">&emsp;__&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">L.A. Cetto <br>Blanc Zinfandel</h3><span class="inline text-2xl float-right">$700</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Stella <br>Rosa Black</h3><span class="inline text-2xl float-right">$1100</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Stella <br>Rosa Blackberry</h3><span class="inline text-2xl float-right">$900</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Stella <br>Rosa Rose</h3><span class="inline text-2xl float-right">$800</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Motto Unabashed <br>Zinfandel</h3><span class="inline text-2xl float-right">$700</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Alamos Malbec</h3><span class="inline text-2xl float-right">$500</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">375 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">MT Baron Balche <br>Mezcla de Tintos</h3><span class="inline text-2xl float-right">$800</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Cabernet Sauvignon <br>El Cielo</h3><span class="inline text-2xl float-right">$800</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">750 ml</p></li>
+                <li class="m-2 p-2"><h3 class="inline text-2xl ">Cabernet Sauvignon <br>Errazuriz</h3><span class="inline text-2xl float-right">$500</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">375 ml</p></li>
+            </ul>
+        </div>
+        <div class="mt-10 mx-2 border-x-2 rounded-lg border-golden relative">
+            <h2 class="right-1/2 font-sistina text-3xl text-golden -mt-4 absolute top-0">Copeo</h2>
+            <ul class="w-full">
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Cabernet</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Blanc de Zinfandel</h3><span class="inline text-2xl float-right">$230</span><p class="text-golden inline float-right">&emsp;______&emsp;</p><p class="text-xs text-white">355 ml</p></li>
+            </ul>
+        </div>
+        <div class="mt-10 mx-2 border-x-2 rounded-lg border-golden relative">
+            <h2 class="absolute ml-8 font-sistina text-3xl text-golden -mt-4 top-0 w-5/6">Shup de Licores</h2>
+            <ul class="w-full">
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Don Julio 70</h3><span class="inline text-2xl float-right">$190</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Don Julio</h3><span class="inline text-2xl float-right">$170</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">José Cuervo <br> Tradicional</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Herradura <br> Reposado</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Herradura Ultra</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">1800 Añejo</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Centenario <br> Reposado</h3><span class="inline text-2xl float-right">$150</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Red Label</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Black Label <span class="text-sm">12 años</span></h3><span class="inline text-2xl float-right">$145</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Chivas Regal <span class="text-sm">12 años</span></h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Buchanan's <span class="text-sm">12 años</span></h3><span class="inline text-2xl float-right">$135</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Buchanan's <span class="text-sm">18 años</span></h3><span class="inline text-2xl float-right">$345</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Buchanan's <br> Two Souls</h3><span class="inline text-2xl float-right">$170</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Buchanan's <br> Master</h3><span class="inline text-2xl float-right">$250</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Jack Daniel's</h3><span class="inline text-2xl float-right">$95</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Bacardí Blanco</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Bacardí Solera</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Martell</h3><span class="inline text-2xl float-right">$480</span><p class="text-golden inline float-right">&emsp;_____&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Hornitos <br> Reposado</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Remy Martin</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Tequila Cazadores</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Tres Generaciones</h3><span class="inline text-2xl float-right">$150</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Bombay Sapphire</h3><span class="inline text-2xl float-right">$95</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Absolute</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Smirnoff</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Don Pedro</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+                <li class="m-2 pt-6 px-2 pb-2"><h3 class="inline text-2xl ">Torres 10</h3><span class="inline text-2xl float-right">$90</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs text-white">45 ml</p></li>
+            </ul>
+        </div>
+    </section>
+    <section id="mixologia" class="my-16">
+        <div class="text-center">
+            <h2 class="border-4 px-1 border-golden font-sistina uppercase text-center m-2 text-golden text-3xl inline-block">Mixología</h2>
+        </div>
+        <ul class="w-full">
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Piña Colada</h3>
+                <div class="inline-flex flex-col float-right">
+                    <span class="inline text-2xl float-right text-right">$95 <p class="text-xs text-golden inline"> Sin Alcohol</p></span><span class="inline text-2xl float-right">$120 <p class="inline text-xs text-golden">Con Alcohol</p></span>
+                </div><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p>
+            </li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Fresa Colada</h3>
+                <div class="inline-flex flex-col float-right">
+                    <span class="inline text-2xl float-right text-right">$95 <p class="text-xs text-golden inline"> Sin Alcohol</p></span><span class="inline text-2xl float-right">$120 <p class="inline text-xs text-golden">Con Alcohol</p></span>
+                </div><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p>
+            </li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Jamaizcal</h3><span class="inline text-2xl float-right">$125</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Caipiriña</h3><span class="inline text-2xl float-right">$115</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Margarita</h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml. <span class="text-xs text-golden">Tamarindo, limón, naranja</span></p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Martinis</h3><span class="inline text-2xl float-right">$125</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Mojitos</h3><span class="inline text-2xl float-right">$110</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml. <span class="text-xs text-golden">Menta, guayaba</span></p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Cosmopolitan</h3><span class="inline text-2xl float-right">$120</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Cuba Libre</h3><span class="inline text-2xl float-right">$100</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Blue Hawai</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Tequila Sunrise</h3><span class="inline text-2xl float-right">$100</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Gin Tonic</h3><span class="inline text-2xl float-right">$130</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+            <li class="m-2 p-2"><h3 class="inline text-2xl ">Desarmador</h3><span class="inline text-2xl float-right">$105</span><p class="text-golden inline float-right">&emsp;_______&emsp;</p><p class="text-xs">360 ml</p></li>
+        </ul>
+    </section>
+    <footer class="bg-gray-400 fixed bottom-0 w-full shadow-xl shadow-white">
+        <div class="flex justify-center items-center pt-2">
+            <a href="https://www.tiktok.com/@lafinca.steakhouse"><i class="fa-brands fa-tiktok text-2xl text-black px-3"></i></a>
+            <a href="https://goo.gl/maps/x81JLaeZXp9PfZ7r5"><i class="fa fa-location-dot text-3xl text-red-600 px-3"></i></a>
+            <a href="https://www.facebook.com/Fincasteakhouse/"><i class="fa-brands fa-square-facebook text-3xl text-blue-800 px-3"></i></a>
+        </div>
+        <p class="mb-2 text-center text-xs">Miguel Tamayo Espinoza de los Monteros 2740, Villas del Río Elite, 80050 Culiacán Rosales, Sin.</p>
+    </footer>
+</body>
+</html>
